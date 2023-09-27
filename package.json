@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "tsoa spec-and-routes && ts-node-dev src/server.ts",
     "format:all": "prettier --write \"src/**/*.ts\"",
-    "build": "tsoa spec-and-routes && tsc"
+    "build": "tsoa spec-and-routes && tsc --update-env"
   },
   "dependencies": {
     "@tsoa/runtime": "^5.0.0",
