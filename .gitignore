@@ -1,0 +1,13 @@
+node_modules
+public
+
+yarn.lock
+/build
+/vscode
+.env
+pnpm-lock.yaml
+
+yarn-error.log
+package-lock-json
+src/modelspnpm-lock.yaml
+/src/routes.ts
