@@ -39,4 +39,5 @@ jobs:
           npm run build
           pm2 stop imageBackend
           pm2 start imageBackend --update-env
+          pm2 save
 
