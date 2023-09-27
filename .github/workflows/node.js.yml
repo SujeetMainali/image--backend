@@ -21,7 +21,8 @@ jobs:
           key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}-
-
+      
+            
       - name: Check Node.js version
         run: node -v
       - uses: actions/checkout@v3
@@ -31,8 +32,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
-      # - run: |
-      #     npm install
+      - run: |
+          echo "${{ secrets.ENV_FILE }}" > .env
 
       - run: |
           npm ci
