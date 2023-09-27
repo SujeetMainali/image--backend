@@ -6,10 +6,10 @@
     "spec": {
       
       "outputDirectory": "build",
-      "host": "localhost:4000",
+      "host": "backend.imageresizer.sujeetmainali.com.np",
       "basePath": "/api/v1",
       "specVersion": 3,
-      "schemes": ["http", "https"]
+      "schemes": [ "https"]
     },
     "routes": {
       
