@@ -28,4 +28,6 @@ jobs:
       - run: |
           node -v
           npm ci
+          npm run build
+          sudo pm2 restart imageBackend
 
