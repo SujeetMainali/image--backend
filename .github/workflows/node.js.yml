@@ -48,6 +48,10 @@ jobs:
           else
             echo "::set-output name=pm2_running::false"
           fi
+       # Start the pm2 process if it's not running
+      - name: Start pm2 process if not running
+        if: steps.check-pm2.outputs.pm2_running == 'false'
+        run: pm2 start build/server.js --name imageBackend --update-env
 
       # Stop the pm2 process if it's running
       - name: Stop pm2 process if running
