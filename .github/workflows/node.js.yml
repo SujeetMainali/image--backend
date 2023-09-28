@@ -37,6 +37,7 @@ jobs:
 
       - run: |
           npm ci
+          npm run build
 
 
       - name: Check if pm2 process exists
@@ -60,6 +61,7 @@ jobs:
 
       - run: |
           pm2 save
+
 
 
 
