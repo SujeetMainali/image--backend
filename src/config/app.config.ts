@@ -50,7 +50,7 @@ if (DotenvConfig.NODE_ENV === 'PRODUCTION') {
   const swaggerDocument = require('../../build/swagger.json');
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-  app.get('/', (req, res) => res.send('Please set to the production; CI CD is successful tho finally with pm2 server automatically setup also try 25'));
+  app.get('/', (req, res) => res.send('Please set to the production; CI CD is successful tho finally with pm2 server automatically setup also try 25 final test (I guess)'));
 }
 
 app.use(ErrorHandler);
