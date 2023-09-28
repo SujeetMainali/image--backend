@@ -56,12 +56,12 @@ jobs:
       # Stop the pm2 process if it's running
       - name: Stop pm2 process if running
         if: steps.check-pm2.outputs.pm2_running == 'true'
-        run: pm2 stop imageBackend
+        run: pm2 restart imageBackend --update-env
 
       # Start the pm2 process
-      - name: Start pm2 process
-        if: steps.check-pm2.outputs.pm2_running == 'false'
-        run: pm2 start imageBackend --update-env
+      # - name: Start pm2 process
+      #   if: steps.check-pm2.outputs.pm2_running == 'false'
+      #   run: pm2 start imageBackend --update-env
 
       - run: |
           pm2 save
