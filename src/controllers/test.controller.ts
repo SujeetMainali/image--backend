@@ -6,7 +6,7 @@ export class TestController extends Controller {
   @Get("/")
   async test() {
     return {
-      message: "test successful",
+      message: "CI CD test successful",
     };
   }
 }
