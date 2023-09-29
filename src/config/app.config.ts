@@ -52,6 +52,8 @@ if (DotenvConfig.NODE_ENV === 'PRODUCTION') {
 
   app.get('/', (req, res) => res.send(`Please set to the production; CI CD is successful tho finally with pm2 server automatically setup also try 25 final test (I guess) one last for confirmation <br>
   <a href="/api-docs">API DOCS</a>
+  <br>
+  <marquee>🎉�</marquee>
   `));
 }
 
